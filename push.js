@@ -13,10 +13,10 @@ webPush.setVapidDetails(
    vapidKeys.privateKey
 )
 const pushSubscription = {
-   "endpoint": "https://fcm.googleapis.com/fcm/send/fmRUWif3l18:APA91bHTJC7_ePcJ716UM3jUUaQL0ZQ-QO42EmLcDrAZvV3B-Q7gbeL1JG9ce4i6Ine4q-1mGZNshzwHqMTYOSH321P7dOFoWAMNwHWetrL58rKTb4Vd0xwaPBAKA98QwWRxuZosIudv",
+   "endpoint": "https://fcm.googleapis.com/fcm/send/eF558Tl2VVQ:APA91bGb0XpHaAXCrkoiMxGT_gjbF7bvvUEVD6CwYSPXoPqDaQs6J1m9InQdEUtaW2oTeOmtKAzUTv0VuallsBXWLxLhP7LmUcZs3zo6xXuTnwubPHZnFFmpzsFKMTEoYxxdeQKOGpB2",
    "keys": {
-       "p256dh": "BOiEXDs2c/fuMRJguFZgxkORVmQOYVuUepQvLrakYXYTQ0UWGpRKw0PIDY2gv+roeDqAd/nYjdgX83vMj8zXVSg=",
-       "auth": "a2Yf4UHVBp06841ncMMmXA=="
+       "p256dh": "BJjtWivAdq/dIEqUPbjkVtpCJS5y1UGdTilMTSZYFyuCQdJriB4X3krYgR6G4i9bYxXWpPa0NET2fgYsIUzUQYY=",
+       "auth": "CeRFhkdbbcSJcJcork4nIQ=="
    }
 };
 const payload = 'Welcome To Football Application';
