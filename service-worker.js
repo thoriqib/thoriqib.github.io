@@ -4,16 +4,23 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 if (workbox){
   console.log(`Workbox berhasil dimuat`);
   workbox.precaching.precacheAndRoute([
+    { url: '/', revision: '1' },
     { url: '/index.html', revision: '1' },
     { url: '/nav.html', revision: '1' },
-    { url: '/manifest.json', revision: '2' },
-    { url: '/push.js', revision: '2' },
+    { url: '/manifest.json', revision: '1' },
+    { url: '/push.js', revision: '1' },
     { url: '/detail_match.html', revision: '1' },
     { url: '/detail_player.html', revision: '1' },
     { url: '/detail_team.html', revision: '1' },
-    { url: '/images/icon1.png', revision: '2' },
-    { url: '/images/icon2.png', revision: '2' },
+    { url: '/pages/home.html', revision: '1' },
+    { url: '/pages/jadwal.html', revision: '1' },
+    { url: '/pages/klasemen.html', revision: '1' },
+    { url: '/pages/favorit.html', revision: '1' },
+    { url: '/pages/tentang.html', revision: '1' },
+    { url: '/images/icon1.png', revision: '1' },
+    { url: '/images/icon2.png', revision: '1' },
     { url: '/images/icon1.ico', revision: '1' },
+    { url: '/images/icon2.ico', revision: '1' },
     { url: '/images/stadium.jpg', revision: '1' },
     { url: '/images/fotoprofil.jpg', revision: '1' },
     { url: '/images/klasemen.jpg', revision: '1' },
@@ -75,7 +82,7 @@ if (workbox){
   );
 
   workbox.routing.registerRoute(
-    /\.(?:png|gif|jpg|jpeg|svg)$/,
+    /\.(?:png|gif|jpg|jpeg|svg|ico)$/,
     workbox.strategies.cacheFirst({
       cacheName: 'images',
       plugins: [
